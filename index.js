@@ -21,10 +21,10 @@ generateNumbers();
 function generateNumbers(){
     for(var i = 0; i < numbers.length; i++){
 
-        rand = Math.floor((Math.random() * 59) + 1);
+        rand = Math.floor((Math.random() * 60) + 1);
        
         while(arrayOfNumbers.includes(rand)){
-            rand = Math.floor((Math.random() * 59) + 1);
+            rand = Math.floor((Math.random() * 60) + 1);
         }
         arrayOfNumbers[i] = rand;
 
@@ -56,10 +56,10 @@ function removeFromArray(num){
 function generateNewNumber(index){
     
     var tempRand;
-    tempRand = Math.floor((Math.random() * 59) + 1);
+    tempRand = Math.floor((Math.random() * 60) + 1);
     
     while(arrayOfNumbers.includes(tempRand)){
-        tempRand = Math.floor((Math.random() * 59) + 1);
+        tempRand = Math.floor((Math.random() * 60) + 1);
     }
     
     arrayOfNumbers[index] = tempRand;
